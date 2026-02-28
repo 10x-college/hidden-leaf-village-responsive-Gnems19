@@ -1,0 +1,26 @@
+// -----------------------------------------------------------------------------
+// Mixins – breakpoints, utilities
+// -----------------------------------------------------------------------------
+
+@use 'variables' as *;
+
+/// Mobile-first media query: styles apply from $min-width and up
+@mixin from($min-width) {
+  @media (min-width: $min-width) {
+    @content;
+  }
+}
+
+/// Centered flex container
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/// Centered absolute positioning (e.g. for hero logo bg)
+@mixin absolute-center {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);
+}

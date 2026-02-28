@@ -1,0 +1,20 @@
+# Dependencies (Sass etc. – no custom JS in this project, only HTML + SCSS/CSS)
+node_modules/
+
+# Build output (optional: remove if you want to track compiled CSS)
+# css/styles.css
+# css/styles.css.map
+
+# OS and editor
+.DS_Store
+Thumbs.db
+*.log
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Optional: local env
+.env
+.env.local

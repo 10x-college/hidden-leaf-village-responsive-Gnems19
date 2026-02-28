@@ -1,0 +1,32 @@
+// -----------------------------------------------------------------------------
+// Design tokens – colors, spacing, typography
+// -----------------------------------------------------------------------------
+
+$color-orange: #f97316;
+$color-orange-dark: #ea580c;
+$color-hero-bg: rgba(42, 42, 42, 0.9);
+$color-nav-bg: #111827;
+$color-page-bg: #f3f4f6;
+$color-text-main: #111827;
+$color-text-muted: #4b5563;
+$color-card-bg: #ffffff;
+$color-white: #ffffff;
+$color-light: #f9fafb;
+$color-slate-light: #e5e7eb;
+$color-slate-mid: #d1d5db;
+$color-slate-dark: rgba(55, 65, 81, 0.9);
+$color-orange-tint: rgba(249, 115, 22, 0.1);
+$color-overlay: rgba(0, 0, 0, 0.14);
+$color-shadow: rgba(15, 23, 42, 0.12);
+
+$radius-card: 0.75rem;
+$radius-pill: 999px;
+$shadow-card: 0 10px 18px $color-shadow;
+
+$font-family-base: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+$container-max: 72rem;
+$container-gutter: 2rem;
+
+// Breakpoints (use with mixin)
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;

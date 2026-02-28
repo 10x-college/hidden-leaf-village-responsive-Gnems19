@@ -1,0 +1,75 @@
+// -----------------------------------------------------------------------------
+// Jutsu section – Academy cards grid
+// -----------------------------------------------------------------------------
+
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.jutsu-section {
+  padding-block: 3rem 4rem;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.section-subtitle {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: $color-text-muted;
+}
+
+.jutsu-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.25rem;
+
+  @include from($breakpoint-tablet) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @include from($breakpoint-desktop) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.jutsu-card {
+  background-color: $color-card-bg;
+  border-radius: $radius-card;
+  padding: 1.1rem 1.25rem 1.25rem;
+  box-shadow: $shadow-card;
+  border-top: 3px solid $color-orange;
+
+  &-header {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.jutsu-icon {
+  @include flex-center;
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: $radius-pill;
+  background-color: $color-orange-tint;
+  font-size: 1.1rem;
+}
+
+.jutsu-name {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.jutsu-description {
+  margin: 0;
+  font-size: 0.9rem;
+  color: $color-text-muted;
+}

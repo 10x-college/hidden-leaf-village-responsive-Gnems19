@@ -1,0 +1,12 @@
+// -----------------------------------------------------------------------------
+// Hidden Leaf Village – main SCSS entry
+// Compiles to ../css/styles.css (and styles.css.map)
+// -----------------------------------------------------------------------------
+
+@use 'abstracts/variables' as *;
+@use 'abstracts/mixins' as *;
+@use 'base/base';
+@use 'layout/header';
+@use 'layout/footer';
+@use 'components/hero';
+@use 'components/jutsu';
