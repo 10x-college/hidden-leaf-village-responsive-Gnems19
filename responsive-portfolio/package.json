@@ -1,0 +1,11 @@
+{
+  "name": "hidden-leaf-village-portfolio",
+  "private": true,
+  "scripts": {
+    "build": "sass scss/styles.scss css/styles.css",
+    "watch": "sass scss/styles.scss css/styles.css --watch"
+  },
+  "devDependencies": {
+    "sass": "^1.69.0"
+  }
+}

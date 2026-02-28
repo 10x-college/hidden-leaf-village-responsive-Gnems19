@@ -1,0 +1,86 @@
+// -----------------------------------------------------------------------------
+// Header – logo bar + navigation
+// -----------------------------------------------------------------------------
+
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.site-header {
+  width: 100%;
+}
+
+.header-bar {
+  background: linear-gradient(to bottom, $color-orange, $color-orange-dark);
+  color: $color-white;
+
+  &-inner {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    padding-block: 1rem;
+
+    @include from($breakpoint-tablet) {
+      padding-block: 1.1rem;
+    }
+  }
+}
+
+.logo-mark {
+  @include flex-center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: $radius-pill;
+  background-color: $color-overlay;
+}
+
+.logo-icon {
+  width: 2rem;
+  height: auto;
+}
+
+.logo-text-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-title {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.logo-tagline {
+  font-size: 0.85rem;
+  opacity: 0.95;
+}
+
+.site-nav {
+  background-color: $color-nav-bg;
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0;
+  margin: 0;
+  list-style: none;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 0.45rem 1rem;
+  border-radius: $radius-pill;
+  font-size: 0.9rem;
+  color: $color-slate-light;
+
+  &:hover {
+    background-color: $color-slate-dark;
+  }
+
+  &.is-active {
+    background-color: $color-orange;
+    color: $color-text-main;
+    font-weight: 600;
+  }
+}
